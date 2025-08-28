@@ -5,7 +5,7 @@ fatTailUI <- function(id) {
     shinyWidgets::sliderTextInput(
       inputId = ns("fatTail"),
       label   = "Given the mean diffCoeff for a particular well, how fat are the tails of the distribution of the FOVs from that well?",
-      choices = as.character(seq(0, 10, by = 0.1)),
+      choices = as.character(seq(0, 9, by = 0.1)),
       selected = "6",
       grid = FALSE
     ),

@@ -5,6 +5,6 @@ account: qe6x8z-dana-aeschliman
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 15286094
-bundleId: 10831203
+bundleId: 10831271
 url: https://qe6x8z-dana-aeschliman.shinyapps.io/mockupscreensimulator/
 version: 1
