@@ -30,9 +30,9 @@ ui <- fluidPage(
   
   # Row 2: three columns
   fluidRow(
-    column(4, fatTailUI("fat")),
+    column(4, fatTailUI("ft1")),
     column(4, corrFOVsUI("cor")),
-    column(4, varRatioUI("varr"))
+    column(4, varRatioUI("vr1"))
   ) #,
   # hr(),
   # fluidRow(
@@ -44,9 +44,10 @@ ui <- fluidPage(
 
 server <- function(input, output, session) {
   headerInfoServer("hdr")
-  fatTailServer("fat")
   corrFOVsServer("cor")
-  varRatioServer("varr")
+  #varRatioServer("varr")
+  ft_out <- fatTailServer("ft1")
+  varRatioServer("vr1", dfFromFatTail = ft_out$dfFromFatTail)
 }
 
 shinyApp(ui, server)
