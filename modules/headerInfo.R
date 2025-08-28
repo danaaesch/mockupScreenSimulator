@@ -51,6 +51,11 @@ headerInfoUI <- function(id) {
                         )
                       ),
                       tags$li("An H1 smallMol may either increase the diffCoeff or decrease the diffCoeff")
+                    ),
+                    tags$ul(
+                      tags$li("Currently, we assume the variance of the FOVs for negCont to be that of a ",
+                        "t-distribution with df chosen below. Later, we may want to allow user to input an estimated variance ",
+                        "for this.")
                     )
                 )
               )
